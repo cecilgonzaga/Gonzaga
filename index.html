@@ -86,6 +86,11 @@ setCalc({current: newValue, total: calc.total, isInitial: false, preOp: calc.pre
 
 // const [display, setDisplay] = React.useState('0');
 
+<<<<<<< HEAD
+//for calculator function
+function Decalculator() {
+    let
+=======
 // useState
 //useState returns an array with 2 elements, the first element is the current state value, the second element is a function that allows you to update the state value
 const [calc, setCalc] = React.useState({
@@ -137,9 +142,7 @@ function doCalculation(){
     }
     return total;
 }
-    
 
-return(
         <div className="calculator">
             <div className="display">{calc.current}</div>
 
@@ -172,4 +175,8 @@ function CalcButton(props){
     );
 }
 ReactDOM.render(<div className="app-container"><Calculator/></div>, document.getElementById("app"));
+<<<<<<< HEAD
+    </script>
+=======
 </script>
+>>>>>>> 4f9ed71026972532570ad2b7e468cab5be28bbe2
