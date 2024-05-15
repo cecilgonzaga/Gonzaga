@@ -95,12 +95,20 @@ function Calculator(){
 
     const [calc, setCalc] = React.useState({
         current: '0',
-        isInitial: true
+        total:'',
+        isInitial: true,
+        preOp:''
     });
 
     //hANDLE CLEAR BUTTON
     function handleClear(){
-        setCalc({current: '0'});
+        setCalc({
+            current: '0',
+            total: '',
+            isInitial: true,
+            preOp:''
+
+        });
     }
     return(
         <div className="calculator">
